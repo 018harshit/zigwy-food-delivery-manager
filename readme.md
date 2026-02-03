@@ -103,11 +103,3 @@ A 2-minute demo video is included explaining:
 **Harshit Chaudhary**
 
 ---
-
-## ✅ Submission Checklist
-- [x] GitHub Repository
-- [x] Live Deployment URL
-- [x] README.md
-- [x] Minimum 3 Git Commits
-- [x] Demo Video
-- [x] All Mandatory UI Requirements
