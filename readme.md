@@ -81,13 +81,13 @@ Each section is clearly separated for better usability.
 The project is deployed on **Vercel** and is publicly accessible.
 
 🔗 Live URL:  
-(Insert your Vercel deployment link here)
+https://zigwy-food-delivery-manager.vercel.app/
 
 ---
 
 ## 📂 GitHub Repository
 🔗 Repository Link:  
-(Insert your GitHub repository link here)
+https://github.com/018harshit/zigwy-food-delivery-manager.git
 
 ---
 
