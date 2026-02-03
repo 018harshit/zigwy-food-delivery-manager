@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZIGWY | Food Delivery Order Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <span class="logo-icon">🍔</span>
+        <span class="company-name">ZIGWY</span>
+    </div>
+
+    <div class="header-right">
+        <span class="tagline">Online Food Delivery Order Manager</span>
+        <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- ADD ORDER -->
+    <div class="card">
+        <h2>Add New Order</h2>
+        <input type="text" id="restaurantName" placeholder="Restaurant Name">
+        <input type="number" id="itemCount" placeholder="Item Count">
+        <input type="number" id="distance" placeholder="Distance (KM)">
+
+        <select id="isPaid">
+            <option value="false">Unpaid</option>
+            <option value="true">Paid</option>
+        </select>
+
+        <button onclick="addOrder()">Add Order</button>
+    </div>
+
+    <!-- ORDER LIST -->
+    <div class="card">
+        <h2>Orders Listing</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Restaurant</th>
+                    <th>Items</th>
+                    <th>Status</th>
+                    <th>Distance (KM)</th>
+                </tr>
+            </thead>
+            <tbody id="orderTable"></tbody>
+        </table>
+    </div>
+
+    <!-- FILTER & ASSIGN -->
+    <div class="card">
+        <h2>Filter & Assign Delivery</h2>
+
+        <select id="filterPaid">
+            <option value="all">All Orders</option>
+            <option value="paid">Paid</option>
+            <option value="unpaid">Unpaid</option>
+        </select>
+
+        <input type="number" id="maxDistance" placeholder="Max Distance (KM)">
+
+        <button onclick="applyFilter()">Apply Filter</button>
+        <button class="assign-btn" onclick="assignDelivery()">Assign Nearest Order</button>
+    </div>
+
+    <!-- OUTPUT -->
+    <div class="card output">
+        <h2>Output Panel</h2>
+        <p id="output">Waiting for action...</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
